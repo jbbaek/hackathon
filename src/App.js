@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+/*eslint-disable*/
+import React from "react";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { Mainpage } from "./page/mainpage";
+import { Mypage } from "./page/mypage";
+import { Modify } from "./page/modify";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/mypage" element={<Mypage />} />
+        <Route path="/mypage/modify" element={<Modify />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
