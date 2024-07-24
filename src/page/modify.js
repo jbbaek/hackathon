@@ -1,12 +1,10 @@
+import React from "react";
 import "./modify.css";
 import { FaRegCircleUser } from "react-icons/fa6";
 
 export const Modify = () => {
   return (
     <div className="modify">
-      <header>
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-      </header>
       <body>
         <nav>
           <div className="container">
@@ -15,7 +13,7 @@ export const Modify = () => {
               <div className="nav-log">
                 <h1>
                   마이페이지
-                  <FaRegCircleUser />
+                  <FaRegCircleUser /> {/*리액트 아이콘 */}
                 </h1>
               </div>
               <div className="navname">
@@ -28,12 +26,13 @@ export const Modify = () => {
         <hr></hr>
         <section className="sec">
           <div className="sec-box">
-            <h1 className="sec-main">My Page</h1>
+            <h1 className="sec-main">Change my page</h1>
             <div className="sec-img">
               <img
-                src={process.env.PUBLIC_URL + "./img/image.png"}
+                src={process.env.PUBLIC_URL + "./img/modify.png"}
                 alt="modify"
               ></img>
+              {/* public 파일에 img폴더에 있는 사진 삽입*/}
             </div>
             <table>
               <tbody>
@@ -59,7 +58,7 @@ export const Modify = () => {
                 </tr>
               </tbody>
             </table>
-            <h2 className="sec-wrap">저장</h2>
+            <h2 className="fin-wrap">저장</h2>
           </div>
         </section>
       </body>

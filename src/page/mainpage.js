@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 export const Mainpage = () => {
   return (
     <div className="Mainpage">
-      <header>
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-      </header>
       <body>
         <nav>
           <div className="container">
@@ -18,7 +15,8 @@ export const Mainpage = () => {
                 <h1>
                   로그인
                   <Link to="/mypage" style={{ textDecoration: "none" }}>
-                    <FaRegCircleUser />
+                    {/* link설정시 나오는 밑줄 없애줌*/}
+                    <FaRegCircleUser /> {/*리액트 아이콘 */}
                   </Link>
                 </h1>
               </div>
@@ -29,6 +27,7 @@ export const Mainpage = () => {
             </div>
           </div>
         </nav>
+        {/* 배경사진 삽입*/}
         <header
           style={{
             backgroundImage: `url('/img/mainpage1.jpg')`,
@@ -51,13 +50,14 @@ export const Mainpage = () => {
           </div>
         </header>
         <section className="sec">
-          <div className="sec-box">
+          <div className="sec-context">
             <article className="artc">
               <div className="card-img1">
                 <img
-                  src={process.env.PUBLIC_URL + "./img/p2.png"}
+                  src={process.env.PUBLIC_URL + "./img/writer.png"}
                   alt="writer"
-                ></img>
+                ></img>{" "}
+                {/* public 파일에 img폴더에 있는 사진 삽입*/}
               </div>
               <div className="card-text1">
                 <h2 className="font">일기쓰기</h2>
@@ -86,9 +86,10 @@ export const Mainpage = () => {
               </div>
               <div className="card-img2">
                 <img
-                  src={process.env.PUBLIC_URL + "./img/p1.png"}
+                  src={process.env.PUBLIC_URL + "./img/mood.png"}
                   alt="mood"
                 ></img>
+                {/* public 파일에 img폴더에 있는 사진 삽입*/}
               </div>
             </article>
           </div>

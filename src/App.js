@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Mainpage />} />
+        <Route export path="/" element={<Mainpage />} />
         <Route path="/mypage" element={<Mypage />} />
         <Route path="/mypage/modify" element={<Modify />} />
       </Routes>

@@ -1,61 +1,5 @@
-* {
-  background: #fffaf0;
-}
-@font-face {
-  font-family: "Nanum Pen Script";
-  font-weight: 300;
-  src: url("./font/NanumPenScript-Regular.ttf");
-}
-body {
-  font-family: "Nanum Pen Script";
-}
-@font-face {
-  font-family: "Nanum Myeongjo";
-  font-weight: 150;
-  src: url("./font/NanumMyeongjo-Regular.ttf");
-}
+/*css가 전체 파일에 적용되서 중복 코드는 삭제함*/
 
-tr {
-  font-family: "Nanum Myeongjo";
-}
-.container {
-  height: 80px;
-  line-height: 80px;
-}
-.nav-main {
-  font-size: 35px;
-  float: left;
-  margin-left: 10px;
-  color: forestgreen;
-}
-.nav-log {
-  list-style-type: none;
-  color: forestgreen;
-}
-div.nav-log > h1 {
-  float: right;
-  margin-right: 25px;
-  font-size: 30px;
-  font-weight: bold;
-}
-.navname {
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 400px;
-  margin-left: 400px;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  padding-left: 150px;
-}
-nav::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .sec-box {
   width: 700px;
   height: 500px;
@@ -71,6 +15,7 @@ nav::after {
   font-size: 30px;
   text-align: center;
 }
+/* 이미지를 원형으로 만들어줌*/
 .sec-img {
   width: 150px;
   height: 150px;
@@ -95,9 +40,8 @@ td {
   border: 1px solid #000;
   padding: 10px;
   text-align: center;
-  background-clip: padding-box;
-  scroll-snap-align: start;
 }
+/* 테이블 왼쪽부분 배경색과 글자색 지정*/
 tbody th {
   color: white;
   background-color: forestgreen;
@@ -110,6 +54,7 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
+/*수정 버튼*/
 .sec-wrap {
   display: inline-block;
   width: 70px;

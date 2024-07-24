@@ -1,6 +1,4 @@
-* {
-  background: #fffaf0;
-}
+/*css가 전체 파일에 적용되서 중복 코드는 삭제함*/
 @font-face {
   font-family: "Nanum Pen Script";
   font-weight: 300;
@@ -17,100 +15,8 @@ body {
 tr {
   font-family: "Nanum Myeongjo";
 }
-.container {
-  height: 80px;
-  line-height: 80px;
-}
-.nav-main {
-  font-size: 35px;
-  float: left;
-  margin-left: 10px;
-  color: forestgreen;
-}
-.nav-log {
-  list-style-type: none;
-  color: forestgreen;
-}
-div.nav-log > h1 {
-  float: right;
-  margin-right: 25px;
-  font-size: 30px;
-  font-weight: bold;
-}
-.navname {
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 400px;
-  margin-left: 400px;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  padding-left: 150px;
-}
-nav::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.sec-box {
-  width: 700px;
-  height: 500px;
-  margin: auto;
-  font-size: 15px;
-  margin-top: 50px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 10px;
-}
-.sec-main {
-  font-size: 30px;
-  text-align: center;
-}
-.sec-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 70%;
-  overflow: hidden;
-  display: block;
-  margin: auto;
-}
-.sec-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-table {
-  width: 100%;
-  border: 1px solid #000;
-  border-collapse: collapse;
-  margin-top: 30px;
-  margin-right: 50px;
-}
-th,
-td {
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: center;
-  background-clip: padding-box;
-  scroll-snap-align: start;
-}
-tbody th {
-  color: white;
-  background-color: forestgreen;
-  font: bold;
-}
-th {
-  margin-right: 20px;
-}
-h2 {
-  font-size: 20px;
-  text-align: center;
-}
 
+/*비밀번호 변경하는 공간*/
 .text {
   width: 200px;
   height: 30;
@@ -118,17 +24,8 @@ h2 {
   border: 3px solid #000;
   border-radius: 5px;
 }
-
-.change {
-  display: inline-block;
-  width: 50px;
-  height: 20px;
-  border: 4px solid forestgreen;
-  border-radius: 10px;
-  border-color: forestgreen;
-  background-color: #fffaf0;
-}
-.sec-wrap {
+/* 저장 버튼*/
+.fin-wrap {
   display: inline-block;
   width: 70px;
   height: 20px;

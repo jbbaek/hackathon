@@ -7,9 +7,6 @@ import { FaRegCircleUser } from "react-icons/fa6";
 export const Mypage = () => {
   return (
     <div className="mypage">
-      <head>
-        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-      </head>
       <body>
         <nav>
           <div className="container">
@@ -18,7 +15,7 @@ export const Mypage = () => {
               <div className="nav-log">
                 <h1>
                   마이페이지
-                  <FaRegCircleUser />
+                  <FaRegCircleUser /> {/*리액트 아이콘 */}
                 </h1>
               </div>
               <div className="navname">
@@ -37,6 +34,7 @@ export const Mypage = () => {
                 src={process.env.PUBLIC_URL + "./img/mypage.png"}
                 alt="mypage"
               ></img>
+              {/* public 파일에 img폴더에 있는 사진 삽입*/}
             </div>
             <table>
               <tbody>
@@ -52,10 +50,15 @@ export const Mypage = () => {
                   <th className="name">비밀번호</th>
                   <td>******</td>
                 </tr>
+                <tr>
+                  <th className="name">내 코인</th>
+                  <td>5000</td> {/* 임시로 삽입*/}
+                </tr>
               </tbody>
             </table>
             <h2 className="sec-wrap">
               <Link to="modify" style={{ textDecoration: "none" }}>
+                {/* link설정시 나오는 밑줄 없애줌*/}
                 수정
               </Link>
             </h2>

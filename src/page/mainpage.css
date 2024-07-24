@@ -1,6 +1,8 @@
+/* 전체 배경색 지정*/
 * {
   background: #fffaf0;
 }
+/* 폰트 지정*/
 @font-face {
   font-family: "Nanum Pen Script";
   font-weight: 300;
@@ -14,7 +16,6 @@ body {
   font-weight: 150;
   src: url("./font/NanumMyeongjo-Regular.ttf");
 }
-
 h3 {
   font-family: "Nanum Myeongjo";
 }
@@ -22,6 +23,7 @@ h3 {
   height: 80px;
   line-height: 80px;
 }
+/* 내비게이션 바*/
 .nav-main {
   font-size: 35px;
   float: left;
@@ -32,6 +34,7 @@ h3 {
   list-style-type: none;
   color: forestgreen;
 }
+
 div.nav-log > h1 {
   float: right;
   margin-right: 25px;
@@ -56,7 +59,7 @@ nav::after {
   display: block;
   clear: both;
 }
-
+/* 메인 소개 페이지*/
 .hd {
   position: relative;
   height: 200px;
@@ -85,10 +88,9 @@ nav::after {
   margin-bottom: 50px;
   animation: text 1.5s ease-in;
   border-radius: 10px;
-  outline: none;
   color: #000;
 }
-
+/* box안에 있는 text 움직임 지정*/
 @keyframes text {
   from {
     opacity: 0%;
@@ -97,6 +99,7 @@ nav::after {
     opacity: 100%;
   }
 }
+/* 일기와 무드트래커 소개 페이지*/
 .artc {
   width: 960px;
   height: 350px;
@@ -105,18 +108,18 @@ nav::after {
 .card-img1 img {
   position: relative;
   left: 50px;
-  width: 95%;
-  height: 135%;
+  width: 100%;
+  height: 70%;
   margin-right: 60px;
 }
 .card-img2 img {
   position: relative;
   right: 50px;
-  width: 95%;
-  height: 135%;
+  width: 100%;
+  height: 100%;
   margin-left: 60px;
 }
-
+/* card-text1,card-text2,card-img1,card-img2를 각각의 상자라고 생각하고 배열을 지정함*/
 .artc {
   margin-top: 50px;
   margin-bottom: 50px;
